@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzI8rmBcz7TZHKhC2qsl0aPY6HvIXlckAgvw&usqp=CAU">
+
+    <title>Répertoire</title>
+</head>
+<body>
+    <h1> Répertoire Téléphonique </h1>
+    <a href = "{{ url_for('recherche') }}"> Effectuer une recherche dans le répertoire </a> 
+    <br>
+    <br>
+    <br>
+    <a href = "{{ url_for('ajouter') }}"> Ajouter un numéro dans le répertoire</a> 
+    <br>
+    <br>
+    <br>
+    <a href = "{{ url_for('supprimer') }}"> Supprimer un numéro du répertoire </a>
+    <br>
+    <br>
+    <br>
+    <a href = "{{ url_for('modifier') }}">Modifier un nom ou un numéro du répertoire </a>  
+    <br>
+    <br>
+    <br>
+    <a href = "{{ url_for('repertoire') }}">Rechercher le répertoire manuellement</a>  
+
+</body>
+</html>

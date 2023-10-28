@@ -1,0 +1,59 @@
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+    text-align: center;
+    font-size: xx-large;
+
+}
+body{
+    background-image: url("image_fond_site_web.jpg");
+}
+a{
+    font-size: larger;
+    position: relative;
+    left: 75px;
+}
+
+label{
+    position: relative;
+    left: 200px;
+    font: size larger;
+}
+input{
+    position: relative;
+    left: 200px;
+}
+
+ red{
+    color:red;
+    font: size 150%; 
+ }
+
+p{
+    text-align: center;
+    font-size: xx-large;
+}
+ul{
+    font-size: x-large;
+}
+button{
+    margin-right: 15px;
+    color: antiquewhite;
+    background-color: black;
+    width: 600px;
+    height: 425px;
+    opacity: 0.7;
+    position: relative;
+    font-size: 55px;
+    font-family: Montserrat,Arial,sans-serif;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
+    cursor:pointer;
+    
+    
+}
+button:hover { font-size: 65px; opacity: 0.9;}
+.submitButton{
+    margin: 55px;
+}

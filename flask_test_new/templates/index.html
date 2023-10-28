@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <title>Repertoire Telephonique</title>
+</head>
+<body>
+    <h1>
+    <a href="{{ url_for('ajouter') }}" class = 'button'> <button id = 'ajouter'>Ajouter un nom au repertoire</button></a>    <a class = 'button' href="{{ url_for('recherche') }}"><button class = 'recherche'>Rechercher un nom dans le repertoire</button> </a>
+    <br>
+    <a class = 'button' href="{{ url_for('modifier') }}"> <button id = 'modifier'>Modifier un nom du repertoire</button></a>    <a class = 'button' href="{{ url_for('supprimer') }}"><button id = 'supprimer'>supprimer un nom du repertoire</button></a>
+
+</body>
+</html>

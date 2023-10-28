@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzI8rmBcz7TZHKhC2qsl0aPY6HvIXlckAgvw&usqp=CAU">
+    <title>Répertoire</title>
+</head>
+<body>
+    <form  action = "http://localhost:5000/resultat_recherche" method = 'post'>
+        <h1 onclick="goBack()" class="recherche"> Répertoire Téléphonique </h1>
+        <label>Nom ou numéro</label>  <input type="text" name="nom" />
+        <input type="submit" value="Envoyer" />
+    </form>
+    <script>
+        function goBack(){
+            window.history.go(-1);
+        }
+    </script>
+    <style>
+        h1.recherche:hover, h1.recherche:active {font-size: 350%;}
+        h1.recherche:hover, h1.recherche:active {color: blueviolet;}
+    </style>
+</body>
+</html>
